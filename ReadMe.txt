@@ -1,8 +1,7 @@
-Here's a clean and detailed `README.md` for your project:
 
 ---
 
-# 📡 JSON File Search Over Network Using Socket Programming
+#📡 JSON File Search Over Network Using Socket Programming
 
 This project demonstrates how to search for a specific **case number** inside multiple JSON files located on a remote machine using **socket programming** in Java. It consists of a **server-client model** where:
 
@@ -11,7 +10,7 @@ This project demonstrates how to search for a specific **case number** inside mu
 
 ---
 
-## 🚀 Why This Implementation?
+##🚀 Why This Implementation?
 
 In an enterprise or distributed environment where multiple servers store large amounts of data in JSON format, searching for specific information across multiple servers can be challenging. This project solves this problem by:
 
@@ -21,9 +20,9 @@ In an enterprise or distributed environment where multiple servers store large a
 
 ---
 
-## 📚 How It Works
+##📚 How It Works
 
-### 🖥️ Server Workflow
+###🖥️ Server Workflow
 
 1. The server listens on a **specific IP address and port** (`10.0.10.31:3344` by default).
 2. It waits for client connections and accepts requests to search for a **case number**.
@@ -36,7 +35,7 @@ In an enterprise or distributed environment where multiple servers store large a
 
 ---
 
-### 📡 Client Workflow
+###📡 Client Workflow
 
 1. The client connects to the server over a specified **IP address and port**.
 2. It sends the **directory path** and **case number** to the server.
@@ -45,7 +44,7 @@ In an enterprise or distributed environment where multiple servers store large a
 
 ---
 
-## 🛠️ Project Structure
+##🛠️ Project Structure
 
 ```
 /FileSearchSocket
@@ -62,7 +61,7 @@ In an enterprise or distributed environment where multiple servers store large a
 
 ---
 
-## ⚙️ Technologies Used
+##⚙️ Technologies Used
 
 - Java (Socket Programming)
 - Regular Expressions (Pattern Matching)
@@ -71,7 +70,7 @@ In an enterprise or distributed environment where multiple servers store large a
 
 ---
 
-## 📄 JSON File Format Example
+##📄 JSON File Format Example
 
 Ensure that the JSON files have a consistent format, for example:
 
@@ -87,9 +86,9 @@ The server looks for a **caseNumber** match based on the client request.
 
 ---
 
-## 📥 How to Set Up and Run
+##📥 How to Set Up and Run
 
-### 1. Clone the Repository
+###1. Clone the Repository
 
 ```bash
 git clone https://github.com/your-username/FileSearchSocket.git
@@ -98,7 +97,7 @@ cd FileSearchSocket
 
 ---
 
-### 2. Configure the Settings
+###2. Configure the Settings
 
 Open the `config/settings.properties` file and modify the following parameters if needed:
 
@@ -114,7 +113,7 @@ search.directory=/opt/VIL/test/
 
 ---
 
-### 3. Build the Project
+###3. Build the Project
 
 Compile the Java files:
 
@@ -125,7 +124,7 @@ javac FileServer.java FileClient.java
 
 ---
 
-### 4. Run the Server
+###4. Run the Server
 
 To run the server:
 
@@ -156,9 +155,9 @@ If a match is found, the client will receive and print the names of files that c
 
 ---
 
-## 🔥 How to Use
+##🔥 How to Use
 
-### Searching for Case Number
+###Searching for Case Number
 
 1. Launch the server on the remote machine where the JSON files are stored.
 2. Run the client on your local machine or any other machine in the same network.
@@ -167,9 +166,9 @@ If a match is found, the client will receive and print the names of files that c
 
 ---
 
-## ⚡ Example Usage
+##⚡ Example Usage
 
-### Case 1: Case Number Found
+###Case 1: Case Number Found
 
 ```
 Enter directory path: /opt/VIL/test/
@@ -178,7 +177,7 @@ Case number found in file: test1.json
 Case number found in file: test3.json
 ```
 
-### Case 2: Case Number Not Found
+###Case 2: Case Number Not Found
 
 ```
 Enter directory path: /opt/VIL/test/
@@ -188,7 +187,7 @@ Case number not found in any file.
 
 ---
 
-## 🔐 Security Considerations
+##🔐 Security Considerations
 
 - Ensure that only trusted clients can connect to the server.
 - Use a firewall to restrict access to the server’s port.
@@ -196,7 +195,7 @@ Case number not found in any file.
 
 ---
 
-## 📝 Potential Use Cases
+##📝 Potential Use Cases
 
 1. **Data Analytics Pipelines** – To scan large volumes of files for specific case numbers.
 2. **File Integrity Checks** – Ensuring case records are consistent across multiple servers.
